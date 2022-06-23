@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+  <div class="page-container">
     <header class="page-header">
         <nav class="navigation">
           <a class="header-logo" href="index.html">
@@ -26,7 +27,7 @@
             <li class="navigation-item">
               <a class="navigation-link" href="#">
                 <img src="images/icons/search.svg" width="20" height="20" alt="Поиск">
-                <span class="visually-hidden">
+                <span class="visually-hidden" hidden>
                   Поиск
                 </span>
               </a>
@@ -34,7 +35,7 @@
             <li class="navigation-item">
               <a class="navigation-link" href="#">
                 <img src="images/icons/favorite.svg" width="20" height="20" alt="Избранное">
-                <span class="visually-hidden">
+                <span class="visually-hidden" hidden>
                   Избранное
                 </span>
               </a>
@@ -64,9 +65,9 @@
                 </li>
             </ul>
             <section class="filters">
-              <h2 class="visually-hidden">Фильтры</h2>
-              <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-               <fieldset class="catalog-filter-group">
+              <h2 class="visually-hidden" hidden>Фильтры</h2>
+                 <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+                    <fieldset class="catalog-filter-group">
                    <legend class="catalog-filter-title">Инфраструктура:</legend>
                    <ul class="catalog-filter-list">
                        <li class="catalog-filter-item">
@@ -85,8 +86,8 @@
                         </label>
                        </li>
                    </ul>
-               </fieldset>
-               <fieldset class="catalog-filter-group">
+                    </fieldset>
+                    <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Тип жилья::</legend>
                 <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
@@ -105,9 +106,9 @@
                      </label>
                     </li>
                 </ul>
-            </fieldset>
-                <button class="button button-blue" type="submit">Применить</button>
-            </form>
+                    </fieldset>
+                    <button class="button button-blue" type="submit">Применить</button>
+                 </form>
             </section>
         </header>
         </div>
@@ -211,7 +212,7 @@
           </ul>
         </section>
 
-        <section class="section-white">
+        <section class="section-with-button">
             <h2 class="section-title">Подпишитесь на рассылку?</h2>
             <p class="section-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscribe-form" action="#" method="post">
@@ -221,25 +222,26 @@
          </section>    
 
         <footer class="page-footer">
+         <div class="page-footer-container">
             <section class="footer-social">
-              <h2 class="visually-hidden">Соцсети</h2>
+              <h2 class="visually-hidden" hidden>Соцсети</h2>
               <ul class="footer-social-list">
                 <li class="footer-social-item">
                   <a class="social-icon" href="https://vk.com/htmlacademy" target="_blank">
                     <img src="images/icons/vk.svg" width="24" height="24" alt="Вконтакте">
-                    <span class="visually-hidden">Вконтакте</span>
+                    <span class="visually-hidden" hidden>Вконтакте</span>
                   </a>
                 </li>
                 <li class="footer-social-item">
                   <a class="social-icon" href="https://t.me/htmlacademy" target="_blank">
                     <img src="images/icons/telegram.svg" width="24" height="24" alt="Телеграм">
-                    <span class="visually-hidden">Телеграм</span>
+                    <span class="visually-hidden" hidden>Телеграм</span>
                   </a>
                 </li>
                 <li class="footer-social-item">
                   <a class="social-icon" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
                     <img src="images/icons/youtube.svg" width="24" height="24" alt="Ютуб">
-                    <span class="visually-hidden">Ютуб</span>
+                    <span class="visually-hidden" hidden>Ютуб</span>
                   </a>
                 </li>
               </ul>
@@ -252,9 +254,9 @@
             <a class="footer-studio-logo" href="https://htmlacademy.ru/" target="_blank">
               <img src="images/icons/logo-htmlacademy.svg" width="116" height="36" alt="Логотип академии">
             </a>
-            
+          </div>
         </footer>
-        
+    </div>
         </main>
   </body>
 </html>
