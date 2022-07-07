@@ -27,7 +27,7 @@
             <li class="navigation-item">
               <a class="navigation-link" href="#">
                 <img src="images/icons/search.svg" width="20" height="20" alt="Поиск">
-                <span class="visually-hidden" hidden>
+                <span class="visually-hidden">
                   Поиск
                 </span>
               </a>
@@ -35,7 +35,7 @@
             <li class="navigation-item">
               <a class="navigation-link" href="#">
                 <img src="images/icons/favorite.svg" width="20" height="20" alt="Избранное">
-                <span class="visually-hidden" hidden>
+                <span class="visually-hidden">
                   Избранное
                 </span>
               </a>
@@ -65,7 +65,7 @@
                 </li>
             </ul>
             <section class="filters">
-              <h2 class="visually-hidden" hidden>Фильтры</h2>
+              <h2 class="visually-hidden">Фильтры</h2>
                  <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                     <fieldset class="catalog-filter-group">
                    <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -121,16 +121,17 @@
                 <option value="expensive">Сначала дорогие</option>
                 <option value="popular">Сначала популярные</option>
             </select>
-
-            <a href="#" class="view-icon-active">
-                <span class="visually-hidden">Показать карточки</span>
-            </a>
-            <a href="#" class="view-icon">
-                <span class="visually-hidden">Показать по очереди</span>
-            </a>
-            <a href="#" class="view-icon">
-                <span class="visually-hidden">Показать список</span>
-            </a>
+            <div class="view">
+              <a href="#" class="view-icon-active">
+                  <span class="visually-hidden">Показать карточки</span>
+              </a>
+              <a href="#" class="view-icon">
+                  <span class="visually-hidden">Показать по очереди</span>
+              </a>
+              <a href="#" class="view-icon">
+                  <span class="visually-hidden">Показать список</span>
+              </a>
+           </div>
 
         </section>
 
@@ -186,31 +187,38 @@
             </li>
           </ul>
         </section>
-
-        <section class="pagination">
-          <ul class="pagination">
-             <li class="pagination-item pagination-item-current">
-               <a class="pagination-link pagination-link-current">1</a>
-             </li>
-             <li class="pagination-item">
-               <a class="pagination-link" href="#">2</a>
-             </li>
-             <li class="pagination-item">
-               <a class="pagination-link" href="#">3</a>
-             </li>
-             <li class="pagination-item">
-               <a class="pagination-link" href="#">4</a>
-             </li>
-             <li class="pagination-item">
-               <a class="pagination-link" href="#">...
-                 <span class="visually-hidden">Следующая страница</span>
-               </a>
-             </li>
-             <li class="pagination-item">
-               <a class="pagination-link" href="#">10</a>
-             </li>
-          </ul>
-        </section>
+        <div class="page-settings">
+          <section class="pagination">
+            <ul class="pagination">
+              <li class="pagination-item pagination-item-current">
+                <a class="pagination-link pagination-link-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">...
+                  <span class="visually-hidden">Следующая страница</span>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">10</a>
+              </li>
+            </ul>
+          </section>
+          <div class="setting-view"></div>
+            <select class="select-control" label="Гостиниц на странице:">
+              <option value="four">4</option>
+              <option value="eight">8</option>
+              <option value="twelve">12</option>
+            </select>
+          </div>
 
         <section class="section-with-button">
             <h2 class="section-title">Подпишитесь на рассылку?</h2>
@@ -224,24 +232,24 @@
         <footer class="page-footer">
          <div class="page-footer-container">
             <section class="footer-social">
-              <h2 class="visually-hidden" hidden>Соцсети</h2>
+              <h2 class="visually-hidden">Соцсети</h2>
               <ul class="footer-social-list">
                 <li class="footer-social-item">
                   <a class="social-icon" href="https://vk.com/htmlacademy" target="_blank">
                     <img src="images/icons/vk.svg" width="24" height="24" alt="Вконтакте">
-                    <span class="visually-hidden" hidden>Вконтакте</span>
+                    <span class="visually-hidden">Вконтакте</span>
                   </a>
                 </li>
                 <li class="footer-social-item">
                   <a class="social-icon" href="https://t.me/htmlacademy" target="_blank">
                     <img src="images/icons/telegram.svg" width="24" height="24" alt="Телеграм">
-                    <span class="visually-hidden" hidden>Телеграм</span>
+                    <span class="visually-hidden">Телеграм</span>
                   </a>
                 </li>
                 <li class="footer-social-item">
                   <a class="social-icon" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
                     <img src="images/icons/youtube.svg" width="24" height="24" alt="Ютуб">
-                    <span class="visually-hidden" hidden>Ютуб</span>
+                    <span class="visually-hidden">Ютуб</span>
                   </a>
                 </li>
               </ul>
